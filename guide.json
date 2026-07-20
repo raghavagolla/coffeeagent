@@ -1,0 +1,77 @@
+[
+  {
+    "section": "1",
+    "heading": "Coffee Selection",
+    "body": ""
+  },
+  {
+    "section": "1.1",
+    "heading": "Choosing coffee for espresso",
+    "body": "Specialty coffee produces more predictable espresso results. Specialty coffee lists detailed information on the bag, such as origin, roast date, processing method, and variety. If the coffee is not specialty grade, switching to specialty coffee is recommended for more consistent results."
+  },
+  {
+    "section": "1.2",
+    "heading": "Identifying the roast degree",
+    "body": "Espresso beans are roasted to one of three degrees. The roast degree can be identified by bean color and by a crush test (crushing a bean to feel how easily it breaks). • Light roast: lighter in color and harder to crush. • Medium roast: mid-brown color and slightly easier to crush. • Dark roast: dark brown to black color and very easy to crush. Visually inspect the beans and perform the crush test to confirm the roast level before brewing."
+  },
+  {
+    "section": "1.3",
+    "heading": "Checking the roast date (resting time)",
+    "body": "Coffee should rest for an optimal window after roasting before being used for espresso. Coffee that is too fresh has excess CO2 buildup; coffee that is too old goes stale. Optimal resting time after the roast date, by roast degree: • Dark roast: 3 to 7 days after the roast date. • Medium roast: 7 to 14 days after the roast date. • Light roast: 14 to 28 days after the roast date."
+  },
+  {
+    "section": "1.4",
+    "heading": "Checking the processing method",
+    "body": "The processing method is listed on the coffee bag, for example washed, natural, or other. Complex or heavily processed coffees (for example, thermal shock or double fermented) tend to extract more quickly. Adjust extraction time and brew ratio based on the processing method."
+  },
+  {
+    "section": "2",
+    "heading": "Dialing In Espresso",
+    "body": ""
+  },
+  {
+    "section": "2.1",
+    "heading": "Setting the dose",
+    "body": "The dose is the weight of ground coffee used for a shot (for example, 18 g). The dose should match the basket size. Avoid overdosing: if the basket is overfilled, the shower screen touches the coffee puck, which harms extraction."
+  },
+  {
+    "section": "2.2",
+    "heading": "Setting the brew ratio (water to coffee)",
+    "body": "The brew ratio is the ratio of dry coffee dose to liquid espresso output. Choose the ratio based on roast degree: • Light roast: 1:2.5 to 1:3. • Medium roast: 1:2. • Dark roast: 1:1.5 to 1:1. The chosen ratio should match the coffee's roast degree and processing method."
+  },
+  {
+    "section": "2.3",
+    "heading": "Setting the grind size",
+    "body": "Set the grind size based on roast degree, then fine-tune it by observing the shot's flow rate. Starting point by roast degree: • Light roast: grind finer. • Dark roast: grind coarser. Fine-tuning by flow rate: • If the shot flows too fast, grind finer. • If the shot flows too slow, grind coarser."
+  },
+  {
+    "section": "2.4",
+    "heading": "Setting the water temperature",
+    "body": "Set the brew water temperature based on roast degree: • Dark roast: 80 to 85 °C. • Medium roast: 85 to 90 °C. • Light roast: 90 °C or above. If the machine's temperature control is not accurate, use temperature surfing: flush the group head to adjust the brew temperature before pulling the shot."
+  },
+  {
+    "section": "3",
+    "heading": "Pulling the Shot",
+    "body": ""
+  },
+  {
+    "section": "3.1",
+    "heading": "Puck preparation",
+    "body": "Prepare the coffee puck before pulling the shot: • Distribute the grounds evenly in the basket. • Tamp with consistent pressure. • If using a regular tamper, make sure it sits snug and level. • Optional: use the Ross Droplet Technique (RDT), adding a tiny amount of water to the beans before grinding, to reduce static and grind retention."
+  },
+  {
+    "section": "3.2",
+    "heading": "Tracking brew time",
+    "body": "Start the timer as soon as the pump engages. A typical target brew time is 25 to 30 seconds. • If the shot pulls too fast, grind finer or increase the dose. • If the shot pulls too slow, grind coarser or decrease the dose."
+  },
+  {
+    "section": "3.3",
+    "heading": "Tasting and adjusting",
+    "body": "Taste the shot and adjust based on flavor: • Too sour or salty: grind finer or pull the shot longer. • Too bitter or dry: grind coarser or pull the shot shorter. • Balanced: the espresso is dialed in."
+  },
+  {
+    "section": "",
+    "heading": "Quick Reference: Parameters by Roast Degree",
+    "body": "Parameter Light roast Medium roast Dark roast Bean color Lighter Mid-brown Dark brown to black Crush test Harder to crush Slightly easier to crush Very easy to crush Resting time after roast 14 to 28 days 7 to 14 days 3 to 7 days Brew ratio (coffee:water) 1:2.5 to 1:3 1:2 1:1.5 to 1:1 Grind size Finer Medium Coarser Water temperature 90 °C or above 85 to 90 °C 80 to 85 °C"
+  }
+]

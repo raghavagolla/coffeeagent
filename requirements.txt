@@ -1,0 +1,8 @@
+python-docx==1.1.2
+pypdf==5.1.0
+groq==0.13.1
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-dotenv==1.0.1
+# Paid fallback provider (used only when MATCH_PROVIDER=anthropic):
+anthropic==0.42.0

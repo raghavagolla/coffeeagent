@@ -1,0 +1,180 @@
+[
+  {
+    "slug": "cappuccino",
+    "name": "Cappuccino",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "Cappuccino means “little cap,” named for the Capuchin order of monks whose brown cloaks and shaved heads resemble the drink's dark crema ringed with white foam. A cappuccino is 6 ounces with equal parts milk foam and steamed milk, distinguishing it from a latte.",
+    "ingredients": [
+      "2 ounces espresso",
+      "4 ounces milk (whole milk works best)"
+    ],
+    "steps": [
+      "Pour the espresso into a mug.",
+      "Place the milk in a wide glass or glass jar and microwave on high power for 30 seconds until it is very hot but not boiling. Alternatively, heat the milk in a saucepan over medium heat for about 5 minutes until very hot but not boiling, watching it carefully.",
+      "Using a milk frother, froth the milk until you don’t see any bubbles and you have a very thick froth, 20 to 30 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Using a spoon to hold back the foam (it should be mostly foam), pour the milk into the espresso. Spoon the remaining foam on top."
+    ],
+    "notes": "Recipe Tip: Cappuccinos are mostly foam when first made. The drink will quickly separate into equal parts steamed milk and foam after pouring, making for a traditional cappuccino. Try sprinkling some cocoa powder on top for a great twist!"
+  },
+  {
+    "slug": "cafe-latte",
+    "name": "Café Latte",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "A café latte is one-third espresso and two-thirds steamed milk with a small amount of foam on top. The term is Italian for “coffee and milk.” In the United States it's known simply as a “latte.”",
+    "ingredients": [
+      "2 ounces espresso",
+      "10 ounces milk (whole milk works best)"
+    ],
+    "steps": [
+      "Pour the espresso into a mug.",
+      "Place the milk in a wide glass or glass jar and microwave for about 30 seconds until it is very hot but not boiling. Alternatively, heat the milk in a saucepan over medium heat for about 5 minutes until very hot but not boiling, watching it carefully.",
+      "Using a milk frother, froth the milk until you don’t see any bubbles and you have a very thick froth, 20 to 30 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Using a spoon to hold back the foam, pour the milk into the espresso. Spoon the remaining foam on top."
+    ],
+    "notes": "Recipe Tip: For a dairy-free version, replace the whole milk with a milk alternative such as soy, oat, or coconut milk. Experiment by adding caramel, vanilla, or blackberry syrup. To make it iced, simply use cold milk and ice — no steaming needed."
+  },
+  {
+    "slug": "flat-white",
+    "name": "Flat White",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "It's unclear whether “flat white” was coined in Australia or New Zealand, but the drink is essentially a cappuccino without the foam — stronger than a latte but with less foam than a cappuccino.",
+    "ingredients": [
+      "2 ounces espresso",
+      "4 ounces milk (whole milk works best)"
+    ],
+    "steps": [
+      "Pour the espresso into a mug.",
+      "Place the milk in a wide glass or glass jar and microwave for 30 seconds until it is very hot but not boiling. Alternatively, heat the milk in a saucepan over medium heat for about 5 minutes until very hot but not boiling, watching it carefully.",
+      "Using a milk frother, froth the milk until you don’t see any bubbles and you have a very thick froth, 20 to 30 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Scoop out and discard any foam on top of the steamed milk. Pour the milk into the center of the espresso, making a tiny white circle in the middle."
+    ],
+    "notes": "Recipe Tip: To make a flat white the way Starbucks does, use 12 ounces of milk instead of 4 ounces and only 1 ounce of espresso."
+  },
+  {
+    "slug": "macchiato",
+    "name": "Macchiato",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "The traditional macchiato is simply espresso “cut” with a little cream — not the popular chain-coffee-shop version, which is an unmixed latte served iced with espresso on top.",
+    "ingredients": [
+      "2 ounces espresso",
+      "1 ounce milk (whole milk works best)"
+    ],
+    "steps": [
+      "Pour the espresso into a mug.",
+      "Place the milk in a wide glass or glass jar and microwave for 30 seconds until it is very hot but not boiling. Alternatively, heat the milk in a saucepan over medium heat for about 5 minutes until very hot but not boiling, watching it carefully.",
+      "Using a milk frother, froth the milk until you don’t see any bubbles and you have a very thick froth, 20 to 30 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Scoop out a dollop of foam and put it on top of your espresso."
+    ],
+    "notes": "Recipe Tip: For the other kind of macchiato, pour 10 ounces of milk over ice and add 2 ounces of espresso over the top, unmixed. Add caramel sauce to top it off!"
+  },
+  {
+    "slug": "americano",
+    "name": "Americano",
+    "serves": "1",
+    "tools": "Espresso brewing device",
+    "description": "Legend has it the Americano got its name from American GIs stationed in Italy during World War II who watered down their espresso to handle the bitterness. Today it's simply espresso diluted with hot water, lasting much longer than a classic 2-ounce shot.",
+    "ingredients": [
+      "2 ounces espresso",
+      "6 to 10 ounces hot water",
+      "Cream, for serving (optional)",
+      "Sugar, for serving (optional)"
+    ],
+    "steps": [
+      "Pour the espresso into a mug and add hot water to dilute, depending on how strong you like your brew. Enjoy it black or add cream and sugar, as you like."
+    ],
+    "notes": ""
+  },
+  {
+    "slug": "red-eye",
+    "name": "Red Eye",
+    "serves": "1",
+    "tools": "Espresso brewing device, Coffee brewing device",
+    "description": "The red eye often finds itself in the hands of a college student working on a paper around 3 a.m. It's simply an entire cup of coffee with a double shot of espresso added — ideal for those who can handle the caffeine.",
+    "ingredients": [
+      "2 ounces espresso",
+      "10 ounces brewed coffee",
+      "Cream, for serving (optional)",
+      "Sugar, for serving (optional)"
+    ],
+    "steps": [
+      "In a mug, combine the espresso and coffee. Enjoy it black or add cream and sugar to taste."
+    ],
+    "notes": "Recipe Tip: If you can brew both the espresso and coffee at the same time, that is ideal, so one does not cool. If you have to do one at a time, make the espresso first, then the coffee so your drink stays warm longer."
+  },
+  {
+    "slug": "cortado",
+    "name": "Cortado",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "Common in many Latin American countries, cortado means “cut” in Spanish — a shot of espresso “cut” with equal parts warm milk. Unlike Italian drinks, the milk is typically not texturized, so you'll see fewer bubbles.",
+    "ingredients": [
+      "2 ounces espresso",
+      "2 ounces milk (whole milk works best)"
+    ],
+    "steps": [
+      "Pour the espresso into a mug.",
+      "Place the milk in a wide glass or glass jar and microwave for 20 to 30 seconds until it is very hot but not boiling, watching it carefully. If you have a food thermometer, aim for between 115°F and 125°F.",
+      "Using a milk frother, froth the milk only until you have a very light froth, about 10 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Pour the milk into the espresso."
+    ],
+    "notes": ""
+  },
+  {
+    "slug": "espresso-con-panna",
+    "name": "Espresso con Panna",
+    "serves": "1",
+    "tools": "Espresso brewing device",
+    "description": "Espresso con panna, Italian for “espresso with cream,” is just that — espresso with whipped cream on top. The bitterness of the espresso against the sweet whipped cream provides a delightful contrast.",
+    "ingredients": [
+      "2 ounces espresso",
+      "Whipped cream, for topping"
+    ],
+    "steps": [
+      "Pour the espresso into a mug and add a dollop of whipped cream on top."
+    ],
+    "notes": "Recipe Tip: Make your own whipped cream with heavy (whipping) cream by whisking or using a hand mixer until you get stiff peaks. Homemade maple-brown sugar whipped cream is delicious!"
+  },
+  {
+    "slug": "breve",
+    "name": "Breve",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "The breve is a latte made with half-and-half instead of milk, resulting in a creamier mouthfeel and a slightly sweeter taste. Many call it the “dessert latte.”",
+    "ingredients": [
+      "2 ounces espresso",
+      "10 ounces half-and-half"
+    ],
+    "steps": [
+      "Pour the espresso into a mug.",
+      "Place the half-and-half in a wide glass or glass jar and microwave for 20 to 30 seconds until it is very hot but not boiling. Alternatively, heat the half-and-half in a saucepan over medium heat for about 5 minutes until very hot but not boiling, watching it carefully.",
+      "Using a milk frother, froth the half-and-half until you don’t see any bubbles and you have a medium-thick froth, 20 to 30 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Using a spoon to hold back the foam, pour the half-and-half into the espresso. Spoon the remaining foam on top."
+    ],
+    "notes": "Recipe Tip: Make this an “iced” breve by adding cold half-and-half to your espresso — a delicious alternative for a hot day!"
+  },
+  {
+    "slug": "cubano",
+    "name": "Cubano",
+    "serves": "1",
+    "tools": "Espresso brewing device, Milk frother or a whisk and a glass",
+    "description": "The Cubano is basically a latte made with half-and-half instead of milk and something added on top — sugar, honey, brown sugar, cayenne, and more. Take the bones of this recipe and make it your own.",
+    "ingredients": [
+      "2 ounces espresso",
+      "1 teaspoon raw sugar",
+      "10 ounces half-and-half",
+      "Pinch sea salt"
+    ],
+    "steps": [
+      "Pour the espresso into a mug and add the sugar.",
+      "Place the half-and-half in a wide glass or glass jar and microwave for 20 to 30 seconds until it is very hot but not boiling. Alternatively, heat the milk in a saucepan over medium heat for about 5 minutes until very hot but not boiling, watching it carefully.",
+      "Using a milk frother, froth the half-and-half until you don’t see any bubbles and you have a medium-thick froth, 20 to 30 seconds. Swirl the glass and lightly tap it on the counter repeatedly to pop the larger bubbles. Repeat this step as needed.",
+      "Using a spoon to hold back the foam, pour the half-and-half into the espresso. Spoon the remaining foam on top.",
+      "Sprinkle on a pinch of sea salt to finish."
+    ],
+    "notes": "Recipe Tip: If you're brave, switch out the raw sugar for cayenne pepper for a spicy twist!"
+  }
+]

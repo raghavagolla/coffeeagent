@@ -1,18 +1,108 @@
-# coffeeagent
+# coffeeagent — Coffee Recipe Lookup Agent
 
-1. Problem Statement
-Baristas and home users often need quick, accurate access to a specific drink recipe (ingredients, ratios, steps) without manually searching through a document or binder. The goal is a lightweight agent that takes a plain-language request (e.g. "how do I make a flat white") and returns the correct recipe pulled directly from a source document — nothing more.
-This is intentionally scoped small: one document, one function (recipe lookup and retrieval), no write actions, no external integrations. It exists to demonstrate an end-to-end agent build — from scoping through deployment — using a real, bounded use case.
+A small, single-purpose agent: ask for an espresso drink in plain language
+("how do I make a flat white", "iced latte") and it returns the matching recipe
+from a source document, cleanly formatted. If there's no match, it says so — it
+**never invents a recipe**. It can also answer espresso-prep questions (grind
+size, dose, brew ratio, …) from a second source document.
 
-3. Objective
-•	Given a user's request naming a drink, the agent finds the matching recipe in the source document and returns it clearly formatted.
-•	If the drink isn't in the document, the agent says so rather than inventing a recipe.
-•	No memory, no state, no external APIs — a single-turn lookup-and-respond tool.
+A scoped warm-up before a larger espresso troubleshooting assistant. See
+[`PLAN.md`](PLAN.md) for the full design and rationale.
 
-5. Scope
-In Scope
-•	Ingesting one static recipe document (Word/PDF/Markdown) as the single source of truth.
-•	Parsing the document into structured recipe records (drink name, ingredients, ratios, steps, notes).
-•	Matching a user's natural-language request to the closest recipe name (handles casual phrasing, e.g. "iced latte" → "Iced Caffè Latte").
-•	Returning the recipe in a clean, readable format (ingredients list + numbered steps).
-•	Basic fallback response when no matching recipe exists.
+## How it works
+
+```
+query ──▶ match.py (1 LLM call: pick ONE known target, or "none")
+             │
+             ▼
+        recipes.json / guide.json  ──▶ render.py (markdown) ──▶ answer
+```
+
+The LLM only *classifies* which recipe/guide section a query maps to. Every word
+shown to the user comes from the parsed documents — the model never authors
+recipe text. Parsing is plain deterministic code (`agent/parse.py`), run once to
+produce `recipes.json` and `guide.json`.
+
+## Layout
+
+```
+agent/
+  parse.py    docx -> recipes.json ; pdf -> guide.json   (build step)
+  match.py    the single LLM classification call (Groq default; env-swappable)
+  render.py   record -> clean markdown
+  core.py     answer(query) -> {kind, target, answer}
+  cli.py      python -m agent.cli "..."
+  api.py      FastAPI: POST /ask
+data/         source documents
+web/          Next.js frontend (single input -> answer page)
+Dockerfile    containerizes the FastAPI backend (Render)
+```
+
+## Setup
+
+Requires Python 3.11+ and (for the frontend) Node 18+.
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate           # Windows;  source .venv/bin/activate on macOS/Linux
+pip install -r requirements.txt
+
+cp .env.example .env             # then add your GROQ_API_KEY
+```
+
+Model/provider are set in `.env` (`MATCH_PROVIDER`, `MATCH_MODEL`). Default is
+Groq `llama-3.3-70b-versatile` (free tier). Without an API key the matcher falls
+back to a crude offline word-match stub so the CLI still runs during dev.
+
+## Build the data (run once, and whenever the source docs change)
+
+```bash
+python -m agent.parse
+# -> Wrote 10 recipes -> recipes.json
+# -> Wrote 15 guide sections -> guide.json
+```
+
+## Run
+
+**CLI**
+```bash
+python -m agent.cli "how do I make a flat white"
+python -m agent.cli "what grind size for a dark roast?"
+```
+
+**API**
+```bash
+uvicorn agent.api:app --reload        # http://localhost:8000
+curl -X POST localhost:8000/ask -H "Content-Type: application/json" -d "{\"query\":\"cortado\"}"
+```
+
+**Frontend**
+```bash
+cd web
+npm install
+cp .env.local.example .env.local      # NEXT_PUBLIC_API_URL=http://localhost:8000
+npm run dev                           # http://localhost:3000
+```
+
+## Deployment
+
+- **Backend (FastAPI)** — build the `Dockerfile` and deploy to **Render** as a
+  web service. Set `GROQ_API_KEY`, `MATCH_PROVIDER`, `MATCH_MODEL`, and
+  `ALLOWED_ORIGINS` (your Vercel URL) in the Render dashboard. `recipes.json` /
+  `guide.json` are baked into the image, so run `python -m agent.parse` and
+  commit them before deploying.
+- **Frontend (Next.js)** — deploy `web/` to **Vercel** with
+  `NEXT_PUBLIC_API_URL` set to the Render backend URL.
+
+Render (a persistent process) is chosen over serverless functions deliberately:
+this v1's single classification call would be fine on serverless, but the later
+troubleshooting assistant's retrieval + reasoning pipeline may need
+longer-running requests, and we'd rather not re-migrate.
+
+## Notes
+
+- **Model choice is "for now."** The Groq free tier fits this prototype's call
+  volume; production/real data shouldn't run on a free tier long-term. Claude
+  (Haiku/Opus) is wired as a paid fallback — see the commented block in
+  `.env.example`.
+- Regenerate `recipes.json` / `guide.json` after editing anything in `data/`.
